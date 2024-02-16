@@ -1,5 +1,9 @@
 # React JS 
 
-## HTML
-This project is HTML:
+
+## The Project Includes :
 - HTML 
+- CSS
+- JavaScript
+- Bootstrap
+- React JS
