@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors in CSS</title>
+    <style>
+
+/* Tag slector  */
+ h1 {
+    color: red;
+ }
+ p {
+    color: rgb(125, 128, 139);
+ } 
+
+ /* Id selectos   */
+  #myid {
+    color: green;
+  }
+  #parared{
+    color: red;
+  }
+  #headinngtext{
+    color: black;
+    background-color: red;
+  }
+
+  #bluepara{
+    color: blue;
+  }
+
+  /* class selector  */
+ .myclassname{
+    background: black;
+    font-size: 40px;
+ }
+
+ .bluepara {
+    color: blue;
+ }
+ .gpara {
+    color: green;
+ }
+
+
+
+ .re {
+    color: green;
+    background-color: beige;
+ }
+ .py {
+    color: crimson;
+ }
+
+ /* grouping selcore  */
+ h2 , h3,span , #id, .py{
+    color: aqua;
+ }
+ 
+
+ /* universal selector 
+  */
+  * {
+   background-color: white;
+  /**
+    color:white;
+    background-color:black; **/
+
+  }
+
+
+
+   a {
+      color: red;
+   }
+
+   a:hover{
+      background-color: yellow;;
+   }
+   #headinngtext:hover{
+      background-color: yellow;
+
+   }
+
+   a:active{
+      background-color: green;
+   }
+   a:visited{
+      background-color: gray;
+   }
+
+   input:focus{
+      background-color: red;
+      font-size: 30px;
+   }
+
+
+   a::before{
+      content: 'beforeeee addded to the link';
+      color: chartreuse;
+   }
+   a::after{
+content: "**";
+color: red;
+color: aqua;
+   }
+
+   
+
+    </style>
+</head>
+<body>
+    <h1 id="headinngtext">Selectors in CSS</h1>
+
+    <!-- 
+       Different Kinds of Selectors 
+        1. Tag Selectors
+    2. Id Selectors
+    3. Class Selectors
+    4. Group Selectors
+    5. Universal Selector
+    
+    ohter : Pseudo elements and Pseudo classes | attributes selectors .   -->
+
+   
+    <!-- Tags Selector  -->
+    <h1>I am h1</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae saepe blanditiis, magni omnis minus nostrum exercitationem, eaque asperiores minima quisquam, alias nesciunt quam quasi enim. Eaque laborum cum totam quaerat.</p>
+
+
+    <!-- Id selector  -->
+    <p id="parared" >I am a red </p>
+
+
+<!-- clss selectos  -->
+ 
+<p class="bluepara">Blue para</p>
+<p class="gpara">Green para </p>
+<p class="bluepara" >Blue para</p>
+<p class="gpara">Green para </p>
+<p class="bluepara">Blue para</p>
+<p class="gpara">Green para </p>
+
+
+
+<!-- Calsess   -->
+<p class="py"> Learning Python </p>
+<p class="re"> Learning React</p>
+
+<p class=" py re myclassname">Learning react and Python</p>
+
+
+<h2>h2 tag</h2>
+<h3>h3</h3>
+<span>span tag</span>
+
+<input type="text">
+
+<a href="https://www.google.com">Visit to my link</a>
+<a href="https://www.facebook.com">Visit to my link</a>
+<a href="https://www.gle.com">Visit to my link</a>
+
+</body>
+</html>
