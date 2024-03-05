@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: rgb(0, 0, 0);
+            display: grid;
+
+           
+            /* grid-template-rows: 50px 1fr 30px;
+          grid-template-columns: 150px 1fr 1fr; */
+           /* grid-template-areas: 
+            "header header header"
+            "section main main"
+            "section main main"
+            "footer footer footer"
+            ;
+             */
+
+             grid-template-areas: 
+            "header header header"
+            "section main main"
+            "section main main "
+            "section footer ."
+            
+            ;
+            
+
+
+        }
+        body{
+            background-color: red;
+        }
+
+       
+
+        .header {
+            background-color: blue;
+            grid-area: header;
+            padding: 30px;
+
+
+        }
+
+        .main {
+            background-color: burlywood;
+            grid-area: main;
+            padding: 30px;
+
+        }
+
+        .section {
+            background-color: yellow;
+            grid-area: section;
+            padding: 30px;
+        }
+
+        .footer {
+            background-color: goldenrod;
+            grid-area: footer;
+            padding: 30px;
+       
+        }
+
+
+        @media screen and (max-width:400px) {
+             .container{
+                grid-template-areas: 
+            "header"
+            "section"
+            "main"
+            "footer"
+            ;
+
+            }
+            
+            
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="header">Header</header>
+        <main class="main">
+            Main
+        </main>
+        <section class="section">Section</section>
+        <footer class="footer">Footer </footer>
+    </div>
+
+</body>
+
+</html>
