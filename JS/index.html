@@ -5,22 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <h1 class="heading">Learning JavaScript</h1>
+<body onload="pageloaded()" onresize="pagerezie()">
+    <h1 class="heading" onmouseover="moveroverfunction()" onmouseleave="mleave()"  >Learning JavaScript</h1>
     <h1 class="heading">Leaning Dom</h1>
 
+    <button onclick="btnclickfun()" ondblclick="dblclickfun()">Click Me BTN</button>
+    <button ondblclick="dblclickfun()">DBl click </button>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore dicta reprehenderit aperiam sequi accusamus enim nam, quaerat, quam fugiat doloremque, doloribus quod magni eos. Similique soluta dolore pariatur deserunt culpa?</p>
 
     <p id="p1">para 1 </p>
     <p id="p2">para 2 </p>
-
+<button id="mybtn">MyBTN</button>
     <div id="d">
         some content
         <span>span content </span>
 
+        <input type="text"  name="" id="inp" onkeypress="onkeypressss()">
+        <input type="text" onfocus="myfocuas()" onblur="mybulrfun()">
+
     </div>
     <!-- Internal  JS  -->
 
+    <script>
+        function pageloaded (){
+            console.log("full page loaded")
+        }
+
+        function pagerezie(){
+            console.log("you windows is resizeing ", window.innerHeight, window.innerWidth)
+        }
+    </script>
     <!-- <script>
         console.log('Hello world')
         console.log("Welcome to INline js")
@@ -38,6 +52,7 @@
 <!-- <script src="loops.js"></script> -->
 
 <!-- <script src="functions.js"></script> -->
- <script src="dommanipulation.js"></script>
+ <!-- <script src="dommanipulation.js"></script> -->
+ <script src="events.js"></script>
 </body>
 </html>
