@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Tutorial</title>
+    <style>
+        p {
+          margin: 8px;
+          font-size: 16px;
+        }
+        .selected {
+          color: red;
+        }
+        .highlight {
+          background: yellow;
+        }
+        </style>
+</head>
+<body>
+    <h1>Jquery</h1>
+
+
+
+
+    <h2 id="myid">helllo welcome to jquery</h2>
+    <div id="clickme">
+        Click here
+      </div>
+      <img id="book" src="data:image/jpeg;base64,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" alt="" width="100" height="123"
+        style="position: relative; left: 10px;">
+
+    <p>Hello</p>
+    <p>and</p>
+    <p>Goodbye</p>
+    <span>Loading</span>
+
+ <button id="btn">MY BTN</button>
+   
+    <!-- Download the file and use  -->
+    <!-- <script src="myjqueryfile.js"></script> -->
+
+
+    <!-- Using the CDN link to use Jquery -->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+
+    <script>
+        $( document ).ready(function() {
+  // Handler for .ready() called.
+  console.log('page ready or loaded')
+  $(function() {
+    $( "span" ).text( "The DOM is now loaded and can be manipulated." );
+  });
+ 
+
+
+
+  $('h1').hide()
+
+$('h1').show()
+
+
+// $( "#clickme" ).on( "click", function() {
+//   $( "#book" ).animate({
+//     opacity: 0.25,
+//     left: "+=50",
+//     height: "toggle"
+//   }, 5000, function() {
+//     // Animation complete.
+//   });
+// });
+
+// $( "#clickme" ).on( "click", function() {
+//   $( "#book" ).animate({
+//     width: "toggle",
+//     height: "toggle"
+//   }, {
+//     duration: 5000,
+//     specialEasing: {
+//       width: "linear",
+//       height: "easeOutBounce"
+//     },
+//     complete: function() {
+//       $( this ).after( "<div>Animation complete.</div>" );
+//     }
+//   });
+// });
+
+
+});
+
+    </script>
+</body>
+</html>
