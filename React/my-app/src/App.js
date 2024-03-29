@@ -2,22 +2,32 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  let name = 'RAM KUmar'
+
+  // style object 
+ let mystyle = {
+  color:'greeen',
+  fontSize: "60px",
+  fontFamily: "Cursive"
+ }
+  // let myele = <h1>Hello i am an exeternal element </h1>
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>
-        Hello  World !
-        </h1>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1 className = "red"
+      //  style = "color:red;"   This type is not supported in jsx
+      // style = {mystyle}  // style object way 
+      style = { {
+        color:'greeen',
+        fontSize: "60px",
+        // fontFamily: "Cursive"
+       }}
+      >Welcome to React Js Learning</h1>
+
+{/* {myele} */}
+      <h2> {2+2}</h2>
+      <p>I am a person  {name}</p>
+
+
     </div>
   );
 }
