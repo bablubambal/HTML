@@ -2,9 +2,14 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Project Demo
+![Swiggy clone App](image.png)
+![Swiggy clone App](image-1.png)
+
 ## Available Scripts
 
 In the project directory, you can run:
+
 
 ### `npm start`
 
